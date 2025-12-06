@@ -393,7 +393,6 @@ def submit_guess(event=None):
 
     guessed = False
     guess = guess_entry.get().strip().upper()       #Gets guess from guess_entry
-    print(word,len(word),guess,len(guess))
     if len(guess) == 1:
 
         if not guess.isalpha():         #Condition to catch non alphabetic guess
@@ -848,3 +847,4 @@ restart_game_btn = tk.Button(main_frame, text="Restart Game", font=("Arial",20,"
 # ============================================================
 rules_fn()
 root.mainloop()
+
